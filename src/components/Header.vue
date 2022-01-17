@@ -22,10 +22,9 @@
                 <div class="logo">
                     <img src="../assets/img/cropped-Group-39-2x.png" alt="brand logo">
                 </div>
-                <ul class="menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                </ul>
+                <div class="menu">
+                    <Li v-for="(element, index) in headerMenu" :key="index" :menuObject='element' />
+                </div>
                 <div class="option">
                     <button>PURCHASE</button>
                     <i class="fas fa-search"></i>
@@ -38,8 +37,43 @@
 </template>
 
 <script>
+import Li from './Li.vue';
+
 export default {
     name: "Header",
+    components: {
+        Li,
+    },
+    data: function () {
+        return {
+            headerMenu: [
+                {
+                    text: 'HOME',
+                    link: '#'
+                },
+                {
+                    text: 'ABOUT',
+                    link: '#'
+                },
+                {
+                    text: 'SERVICES',
+                    link: '#'
+                },
+                {
+                    text: 'SHOWCASE',
+                    link: '#'
+                },
+                {
+                    text: 'BLOG',
+                    link: '#'
+                },
+                {
+                    text: 'CONTACT',
+                    link: '#'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -76,16 +110,10 @@ export default {
         .menu {
             display: flex;
             justify-content: center;
-            li {
-                margin: 5px;
-                a {
-                    padding: 10px;
-                }
-            }
         }
         .option {
             button {
-                background-image: linear-gradient(30deg, #98e161, #05d9a4);
+                background-image: linear-gradient(90deg, #98e161, #05d9a4);
                 border: none;
                 border-radius: 50px;
                 color: white;
