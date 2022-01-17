@@ -14,6 +14,6 @@ export default {
 <style scoped lang="scss">
 a {
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
 }
 </style>
