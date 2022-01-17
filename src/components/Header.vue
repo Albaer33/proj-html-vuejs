@@ -16,6 +16,24 @@
             </div>
         </div>
 
+        <!-- main header part -->
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="../assets/img/cropped-Group-39-2x.png" alt="brand logo">
+                </div>
+                <ul class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+                <div class="option">
+                    <button>PURCHASE</button>
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-header"></div>
     </header>
 </template>
 
@@ -28,6 +46,7 @@ export default {
 <style scoped lang="scss">
 @import '../style/variables.scss';
 
+// contact header part
 .contact-header {
     height: 40px;
     line-height: 40px;
@@ -39,7 +58,43 @@ export default {
         .list {
             display: flex;
             li {
-                margin: 0 5px;
+                margin: 0 8px;
+            }
+        }
+    }
+}
+
+// main header part
+.main-header {
+    width: 100%;
+    height: 100px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .menu {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 5px;
+                a {
+                    padding: 10px;
+                }
+            }
+        }
+        .option {
+            button {
+                background-image: linear-gradient(30deg, #98e161, #05d9a4);
+                border: none;
+                border-radius: 50px;
+                color: white;
+                padding: 15px 30px;
+                cursor: pointer;
+            }
+            i {
+                color: $brand_green;
+                margin-left: 10px;
             }
         }
     }
