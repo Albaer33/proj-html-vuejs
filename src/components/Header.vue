@@ -52,6 +52,11 @@
                     <p>Far far away, beyond the word mountains, far from the world of Vokalia and Consonantia, there live the blind texts. Separated they live in the bookmarksgrove right at the coast of the Semantics, a large language ocean. separeted they live in bookmarksgrove</p>
                     <button>READ MORE</button>
                     <div class="social">FACEBOOK - YOUTUBE - INSTAGRAM - TWITTER</div>
+                    <div class="slider">
+                        <div class="number">1</div>
+                        <div class="number active">2</div>
+                        <div class="number">3</div>
+                    </div>
                 </div>
             </div>
             <div class="bg-image"></div>
@@ -155,10 +160,10 @@ export default {
     padding-top: 150px;
     background-image: url("../assets/img/Group-35-2x.png");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 1200px;
+    background-position: 180% 50%;
     .container {
         .jumbotron-text {
+            position: relative;
             width: 40%;
             h4 span {
                 color: $brand_green;
@@ -196,6 +201,26 @@ export default {
             .social {
                 font-weight: bold;
                 padding: 60px 0;
+            }
+            .slider {
+                background-image: linear-gradient(90deg, #424242, #2c2c2c);
+                border-radius: 50px;
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                z-index: 2;
+                bottom: 45px;
+                right: -20px;
+                text-align: center;
+                .number {
+                    padding: 10px 20px;
+                }
+                .active {
+                    background-image: linear-gradient(90deg, #98e161, #05d9a4);
+                    border-radius: 40px;
+                }
             }
         }
     }
