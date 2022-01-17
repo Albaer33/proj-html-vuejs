@@ -2,7 +2,6 @@
   <div id="app">
     <!-- header -->
     <Header/>
-
     <!-- main -->
 
     <!-- footer -->
@@ -21,5 +20,5 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import './style/general.scss';
 </style>
