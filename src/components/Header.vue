@@ -3,16 +3,16 @@
         <!-- contact header part -->
         <div class="contact-header">
             <div class="container">
-                <div class="phone">
-                    <i class="fas fa-phone"></i>
-                    <span>(001) 88451234</span>
-                    <span>8845455438</span>
-                </div>
-                <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-pinterest"></i>
-                </div>
+                <ul class="list">
+                    <li><i class="fas fa-phone"></i></li>
+                    <li>(001) 88451234</li>
+                    <li>8845455438</li>
+                </ul>
+                <ul class="list">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-pinterest"></i></li>
+                </ul>
             </div>
         </div>
 
@@ -30,7 +30,18 @@ export default {
 
 .contact-header {
     height: 40px;
-    background-color: $brand_darkgrey;
+    line-height: 40px;
+    background-color: #333333;
     color: white;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .list {
+            display: flex;
+            li {
+                margin: 0 5px;
+            }
+        }
+    }
 }
 </style>
