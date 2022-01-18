@@ -114,10 +114,11 @@
                         <span>Marketing</span>
                     </div>
                 </div>
-            </div>        
+            </div>
+            <button class="btn-primary centered">READ MORE</button>     
         </section>
         <!-- section 4 -->
-
+        <section></section>
         <!-- section 5 -->
 
         <!-- section 6 -->
@@ -170,6 +171,12 @@ export default {
 }
 .standard-section {
     padding: 200px 0;
+    .centered {
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        margin: 60px 0;
+    }
     .text {
         width: 35%;
         .separator {
