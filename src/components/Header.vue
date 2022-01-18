@@ -216,6 +216,7 @@ export default {
                 text-align: center;
                 .number {
                     padding: 10px 20px;
+                    color: white;
                 }
                 .active {
                     background-image: linear-gradient(90deg, #98e161, #05d9a4);
