@@ -69,12 +69,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// section 1
 .features {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 250px 0;
     .text {
-        width: 30%;
+        width: 40%;
         h2 {
             font-size: 50px;
         }
@@ -82,5 +84,16 @@ export default {
             margin: 50px 0;
         }
     }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+    }
 }
+// section 3
+// section 4
+// section 5
+// section 6
+// section 7
+// section 8
 </style>
