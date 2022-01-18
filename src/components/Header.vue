@@ -172,7 +172,6 @@ export default {
                 }
             }
             p {
-                color: #AAAAAA;
                 padding-top: 40px;
             }
             button {

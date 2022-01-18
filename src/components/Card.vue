@@ -37,4 +37,10 @@ export default {
         color: #AAAAAA;
     }
 }
+.card:hover {
+    background-image: linear-gradient(60deg, #05d9a4, #98e161);
+    i, h3, p {
+        color: white;
+    }
+}
 </style>

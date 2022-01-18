@@ -23,6 +23,10 @@ a {
     text-decoration: none;
     color: black;
 }
+p {
+    width: 50%;
+    color: #AAAAAA;
+}
 button {
     border: none;
     border-radius: 50px;
@@ -54,4 +58,7 @@ button {
 }
 .green-text {
     color: $brand_green;
+}
+h2 {
+    font-size: 55px;
 }
