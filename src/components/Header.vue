@@ -26,7 +26,7 @@
                     <Li v-for="(element, index) in headerMenu" :key="index" :menuObject='element' />
                 </div>
                 <div class="option">
-                    <button>PURCHASE</button>
+                    <button class="btn-primary">PURCHASE</button>
                     <i class="fas fa-search"></i>
                 </div>
             </div>
@@ -44,10 +44,12 @@
                     <span>E X P E R I E N C E</span>
                     </h4>
 
-                    <h1>Focus on Your <br><span>Business</span></h1>
+                    <h1>Focus on Your <br><span class="green-text">Business</span></h1>
 
-                    <div class="separator first-sep"></div>
-                    <div class="separator second-sep"></div>
+                    <div class="separator">
+                        <div class="first-sep"></div>
+                        <div class="second-sep"></div>
+                    </div>
 
                     <p>Far far away, beyond the word mountains, far from the world of Vokalia and Consonantia, there live the blind texts. Separated they live in the bookmarksgrove right at the coast of the Semantics, a large language ocean. separeted they live in bookmarksgrove</p>
                     <button>READ MORE</button>
@@ -140,12 +142,6 @@ export default {
             justify-content: center;
         }
         .option {
-            button {
-                background-image: linear-gradient(90deg, #98e161, #05d9a4);
-            }
-            button:hover {
-                background-image: linear-gradient(90deg, #3D3D3D, #333333, black);
-            }
             i {
                 color: $brand_green;
                 margin-left: 10px;
@@ -166,7 +162,6 @@ export default {
             position: relative;
             width: 40%;
             h4 span {
-                color: $brand_green;
                 margin-right: 15px;
             }
             h1 {
@@ -175,20 +170,6 @@ export default {
                 span{
                     color: $brand_green;
                 }
-            }
-            .separator {
-                display: inline-block;
-                margin: 5px;
-                border-radius: 3px;
-                background-image: linear-gradient(90deg, #98e161, #05d9a4);
-            }
-            .first-sep {
-                height: 5px;
-                width: 10px;
-            }
-            .second-sep {
-                height: 5px;
-                width: 50px;
             }
             p {
                 color: #AAAAAA;
