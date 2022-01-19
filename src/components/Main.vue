@@ -1,7 +1,7 @@
 <template>
     <main>
         <!-- section 1 -->
-        <section class="standard-section container flex-centered">
+        <section class="standard-section container flex-centered section200">
             <div class="text">
                 <h2>We are here to make you <span class="green-text">Website</span> look more <span class="green-text">Elegant</span> and stylish!</h2>
                 <div class="separator">
@@ -16,7 +16,7 @@
             </div>
         </section>
         <!-- section 2 -->
-        <section class="standard-section bg-grey flex-centered">
+        <section class="standard-section bg-grey flex-centered section200">
             <div class="banner">
                 <div class="back-img">
                     <img class="lower" src="../assets/img/busy-architect-PYVKWM4-1024x872.jpg" alt="">
@@ -34,7 +34,7 @@
             </div>
         </section>
         <!-- section 3 -->
-        <section class="container standard-section">
+        <section class="container section200">
             <div class="project-intro">
                 <div class="project-text">
                     <div class="separator">
@@ -118,7 +118,7 @@
             <button class="btn-primary centered">READ MORE</button>     
         </section>
         <!-- section 4 -->
-        <section class="standard-section bg-grey">
+        <section class="bg-grey section200">
             <div class="container">
                 <div class="back-img-box">
                     <img src="../assets/img/person-with-long-curly-hair-PZ99QM2-2x.jpg" alt="">
@@ -152,11 +152,81 @@
             </div>
         </section>
         <!-- section 5 -->
-        <section>
-            <!-- to do -->
+        <section class="bg-grey section200">
+            <div class="container flex-centered">
+                <div class="support">
+                    <h2>With <span class="green-text">live chat 24/7</span> support</h2>
+                    <div class="separator">
+                        <div class="first-sep"></div>
+                        <div class="second-sep"></div>
+                    </div>
+                    <p>Far far away, beyond the word mountains, far from the world of Vokalia and Consonantia, there live the blind texts. Separated they live in the bookmarksgrove right at the coast of the Semantics, a large language ocean. separeted they live in bookmarksgrove. Far far away, beyond the word mountains, far from the world of Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+
+                <div class="promotions">
+                    <div class="single-promotion">
+                        <div class="small-band"></div>
+                        <h4>DESIGNING</h4>
+                        <span>All designs</span>
+                        <div class="wide-band">
+                            <div>$ <span>13</span>/design</div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Creative design enabled</li>
+                            <li><i class="fas fa-check"></i> Vibrant color usage</li>
+                            <li><i class="fas fa-check"></i> Eye catching design</li>
+                            <li><i class="fas fa-check"></i> Extreme typography</li>
+                            <li><i class="fas fa-check"></i> Exeptional design</li>
+                        </ul>
+                    </div>
+
+                    <div class="single-promotion">
+                        <div class="small-band notblack"></div>
+                        <h4>DEVELOPMENT</h4>
+                        <span>WordPress project</span>
+                        <div class="wide-band notblack">
+                            <div>$ <span>15</span>/project</div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Creative design enabled</li>
+                            <li><i class="fas fa-check"></i> Vibrant color usage</li>
+                            <li><i class="fas fa-check"></i> Eye catching design</li>
+                            <li><i class="fas fa-check"></i> Extreme typography</li>
+                            <li><i class="fas fa-check"></i> Exeptional design</li>
+                        </ul>
+                    </div>
+
+                    <div class="single-promotion">
+                        <div class="small-band"></div>
+                        <h4>SEO</h4>
+                        <span>Web Product</span>
+                        <div class="wide-band">
+                            <div>$ <span>10</span>/product</div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Creative design enabled</li>
+                            <li><i class="fas fa-check"></i> Vibrant color usage</li>
+                            <li><i class="fas fa-check"></i> Eye catching design</li>
+                            <li><i class="fas fa-check"></i> Extreme typography</li>
+                            <li><i class="fas fa-check"></i> Exeptional design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- section 6 -->
-
+        <section class="client-opinion section200">
+            <div class="overlay"></div>
+            <div class="text">
+                <i class="fas fa-quote-left green-text"></i>
+                <div class="quote">When it comes to berbequing, there are two main schools of thought for the techniques that you can use. Freshly scrambled eggs with applewood smoked bacon are amazing!</div>
+                <div class="img-box">
+                    <img src="../assets/img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
+                </div>
+                <span class="green-text name">LISSA DURBIN</span>
+                <span>Client</span>
+            </div>
+        </section>
         <!-- section 7 -->
     </main>
 </template>
@@ -199,12 +269,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-.bg-grey {
-    background-color: #F5F5F5;
-}
+@import '../style/variables.scss';
 .standard-section {
-    padding: 200px 0;
     .centered {
         position: absolute;
         transform: translate(-50%);
@@ -255,11 +321,6 @@ export default {
             z-index: 1;
         }
     }
-}
-.flex-centered {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .project-intro {
     display: flex;
@@ -357,6 +418,95 @@ export default {
         flex-direction: column;
         justify-content: center;
         padding-left: 70px;
+    }
+}
+.support {
+    width: 35%;
+}
+.promotions {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .single-promotion {
+        width: calc((100% / 3) - 40px);
+        margin: 0 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: #c7c7c7 0px 0px 30px 5px;
+        li {
+            padding: 20px 0;
+        }
+        h4 {
+            font-size: 26px;
+        }
+        span {
+            color: $brand_grey;
+        }
+        .small-band {
+            height: 20px;
+            margin-bottom: 20px;
+            background-image: linear-gradient(90deg, #3D3D3D, #333333, black);;
+        }
+        .wide-band {
+            height: 100px;
+            line-height: 100px;
+            margin: 20px 0;
+            background-image: linear-gradient(90deg, #3D3D3D, #333333, black);
+            color: white;
+            span {
+                color: inherit;
+                font-size: 40px;
+            }
+        }
+        .notblack {
+            background-image: linear-gradient(270deg, #05d9a4, #98e161);;
+        }
+    }
+}
+.client-opinion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url('../assets/img/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg');
+    position: relative;
+    .text {
+        text-align: center;
+        position: relative;
+        z-index: 3;
+        i {
+        font-size: 60px;
+        }
+        .quote {
+            font-size: 30px;
+            padding: 100px 300px;
+            font-style: italic;
+        }
+        .img-box {
+            display: inline-block;
+            width: 180px;
+            height: 180px;
+            border-radius: 300px;
+            overflow: hidden;
+            border: 3px solid white;
+        }
+        .name {
+            display: block;
+            padding: 10px 0;
+            font-size: 22px;
+        }
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(51, 51, 51, 0.93);
     }
 }
 </style>
