@@ -228,7 +228,7 @@
             </div>
         </section>
         <!-- section 7 -->
-        <section class="section200">
+        <section class="section200 bg-grey">
             <div class="container news">
                 <h2>latest news &amp; our <span class="green-text">Blog</span></h2>
                 <div class="separator">
@@ -267,7 +267,7 @@
             </div>
         </section>
         <!-- section 8 -->
-        <section class="section200">
+        <section class="section200 bg-grey">
             <div class="container initialize">
                 <div class="w2 black">
                     <span class="grey-text">Are you ready?</span>
@@ -632,6 +632,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: space-between;
     .black {
         background-image: linear-gradient(90deg, #3D3D3D, #333333, black);
     }
@@ -678,10 +679,9 @@ export default {
         }
     }
     .w6 {
-        
         align-self: center;
         width: calc((100% / 6) - 180px);
-        margin: 100px 90px;
+        margin-top: 100px;
     }
 }
 </style>
