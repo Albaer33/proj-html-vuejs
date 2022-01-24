@@ -7,7 +7,7 @@
     <Main/>
 
     <!-- footer -->
-    <Footer footerMenu="footerMnu" />
+    <Footer />
 
   </div>
 </template>
